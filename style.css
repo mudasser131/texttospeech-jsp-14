@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5def95;
+}
+
+.container {
+    height: 30rem;
+    max-width: 50rem;
+    background-color: #5d00ff;
+    margin: auto;
+    margin-top: 15rem;
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column; /* Stack items vertically by default */
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    max-width: 18rem;
+    height: 3rem;
+    text-align: center;
+    margin-bottom: 1rem; /* Add some spacing between input and button on smaller screens */
+}
+
+button {
+    width: 100%;
+    max-width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: #1461fa;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .container {
+        margin: 5rem 1.2rem;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .container {
+        margin-top: 10rem;
+    }
+}
